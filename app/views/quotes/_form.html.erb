@@ -6,6 +6,7 @@
   <% end %>
 
   <%= f.input :name, input_html: { autofocus: true } %>
+  <%= link_to "Cancel", quotes_path, class: "btn btn--light" %>
   <%# The autofocus option is here to focus the corresponding 
   input field when the form appears on the screen, so we don't have to use the mouse and can type directly in it.  %>
   <%= f.submit class: "btn btn--secondary" %>
